@@ -3,14 +3,18 @@ function firstLetterCaps(item) {
   var firstLetter = item.charAt(0).toUpperCase();
   var item = firstLetter + remainder;
   return item;
-}
+};
 
 function addOrderDetails(firstName, lastName, address, item) {
   $("#first-name-confirm").text(firstName);
   $("#last-name-confirm").text(lastName);
   $("#address-confirm").text(address);
   $("#dino-confirm").text(item);
-}
+};
+
+function clearOnModalClose() {
+  document.getElementById("order-form").reset();
+};
 
 $(document).ready(function(){
   $("#submit").click(function(e){
@@ -22,5 +26,9 @@ $(document).ready(function(){
     var item = $("input:radio[name=dinosaur]:checked").val();
     item = firstLetterCaps(item);
     addOrderDetails(firstName, lastName, address, item);
+  });
+
+  $("#modal-okay").click(function() {
+    clearOnModalClose();
   });
 });
