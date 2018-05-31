@@ -1,4 +1,22 @@
 .panel {
-  width: 50%;
+  width: 75%;
   margin: 0 auto;
+}
+
+.dino-img {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.radio {
+  margin: 0 auto;
+}
+
+label {
+  padding: 15px;
+}
+
+figcaption {
+  text-align: center;
 }
