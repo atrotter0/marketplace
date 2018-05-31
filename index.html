@@ -35,7 +35,7 @@
             <h4>Item</h4>
             <div class="radio">
               <label>
-                <input type="radio" name="dinosaur" value="t-rex" checked>
+                <input type="radio" name="dinosaur" value="tyrannosaurus" checked>
                 <figure>
                   <img src="img/t-rex.jpg" class="dino-img" alt="An image of a T-Rex">
                   <figcaption>Tyrannosaurus Rex</figcaption>
@@ -44,7 +44,7 @@
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="dinosaur" value="bront" checked>
+                <input type="radio" name="dinosaur" value="brontosaurus">
                 <figure>
                   <img src="img/bront.jpg" class="dino-img" alt="An image of a Brontosaurus">
                   <figcaption>Brontosaurus</figcaption>
@@ -52,25 +52,32 @@
               </label>
             </div>
           </div>
-          <button type="submit" id="submit" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Submit</button>
+          <button type="submit" id="submit" class="btn btn-success center-btn" data-toggle="modal" data-target="#orderConfirm">Order Now!</button>
         </form>
       </div>
     </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="orderConfirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h1 class="modal-title" id="exampleModalLabel">Order Confirmation</h1>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <p>Modal body text</p>
+            <h4>Thank you for placing your order!</h4>
+            <h4>First Name</h4>
+            <p id="first-name-confirm"></p>
+            <h4>Last Name</h4>
+            <p id="last-name-confirm"></p>
+            <h4>Address</h4>
+            <p id="address-confirm"></p>
+            <h4>Dinosaur</h4>
+            <p id="dino-confirm"></p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Okay</button>
           </div>
         </div>
       </div>
